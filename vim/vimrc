@@ -12,6 +12,21 @@ endif
 " basic settings
 syntax on
 set number	"show line numbers
+usr0@system:~$ cat ~/.vimrc 
+" debian
+runtime! debian.vim
+
+" start up checking
+if filereadable(expand('$VIMRUNTIME/defaults.vim'))
+	unlet! g:skip_defaults_vim
+	source $VIMRUNTIME/defaults.vim
+endif
+
+
+
+" basic settings
+syntax on
+set number	"show line numbers
 set wildmenu	"enable a menu that shows tab completion options in the status bar
 set showmatch	"highlights matching brackets on cursor hover
 set ruler	"show cursor position in status bar
@@ -56,9 +71,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " code linting
 Plug 'dense-analysis/ale'
-
-" status bar
-Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
