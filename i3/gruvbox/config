@@ -50,7 +50,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -i -nb '#3c3836' -nf '#689d6a' -sb '#689d6a' -sf '#3c3836' -fn 'NotoMonoRegular:bold:pixelsize=14'
+bindsym $mod+d exec --no-startup-id dmenu_run -i -nb '#272727' -nf '#ebdbb2' -sb '#ebdbb2' -sf '#272727' -fn 'NotoMonoRegular:bold:pixelsize=14'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
