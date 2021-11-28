@@ -12,21 +12,6 @@ endif
 " basic settings
 syntax on
 set number	"show line numbers
-usr0@system:~$ cat ~/.vimrc 
-" debian
-runtime! debian.vim
-
-" start up checking
-if filereadable(expand('$VIMRUNTIME/defaults.vim'))
-	unlet! g:skip_defaults_vim
-	source $VIMRUNTIME/defaults.vim
-endif
-
-
-
-" basic settings
-syntax on
-set number	"show line numbers
 set wildmenu	"enable a menu that shows tab completion options in the status bar
 set showmatch	"highlights matching brackets on cursor hover
 set ruler	"show cursor position in status bar
@@ -67,10 +52,10 @@ Plug 'chun-yang/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 
 " code completion (run ':CocInstall coc-tabnine' for better completion)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " code linting
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 call plug#end()
 

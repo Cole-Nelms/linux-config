@@ -14,6 +14,12 @@ set $mod Mod4
 # Luanch terminal on load up.
 exec kitty
 
+# for transparency
+exec --no-startup-id compton
+
+# walpaper
+exec --no-startup-id feh --bg-scale ~/Pictures/walpaper.jpg
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 0
@@ -175,23 +181,23 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-bar {
-    status_command i3status
-	font pango:monospace 9
+#bar {
+#    status_command i3status
+#	font pango:monospace 9
+#
+#    colors {
+#    		# Whole color settings
+#		background #272727
+#		statusline #ebdbb2
+#		separator  #272727
 
-    colors {
-    		# Whole color settings
-		background #272727
-		statusline #ebdbb2
-		separator  #272727
 
-
-		focused_workspace  #ebdbb2 #ebdbb2 #ebdbb2
-		active_workspace   #504945 #504945 #504945 
-		inactive_workspace #504945 #504945 #504945 
-		urgent_workspace   #504945 #504945 #504945 
-    }
-}
+#		focused_workspace  #ebdbb2 #ebdbb2 #ebdbb2
+#		active_workspace   #504945 #504945 #504945 
+#		inactive_workspace #504945 #504945 #504945 
+#		urgent_workspace   #504945 #504945 #504945 
+#    }
+#}
 
 client.focused          #272727 #272727 #272727 #272727 #272727
 client.focused_inactive #272727 #272727 #272727 #272727 #272727 
