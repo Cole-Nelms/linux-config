@@ -36,20 +36,20 @@ set cindent         "stricter rules for C programs"
 
 
 " vim plug
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
 
 " fuzzy finder
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf.vim'
 
 " file manager
-Plug 'francoiscabrol/ranger.vim'
+" Plug 'francoiscabrol/ranger.vim'
 
 " auto closing
-Plug 'chun-yang/auto-pairs'
+" Plug 'chun-yang/auto-pairs'
 
 " syntax highlighting
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " code completion (run ':CocInstall coc-tabnine' for better completion)
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -57,7 +57,7 @@ Plug 'sheerun/vim-polyglot'
 " code linting
 " Plug 'dense-analysis/ale'
 
-call plug#end()
+" call plug#end()
 
 
 

@@ -30,18 +30,21 @@ echo "cd /home/$1/"
 cd /home/$1/
 
 # Copy the repo config files into the config directories
-echo "cp $2/i3/gruvbox/config ./.config/i3/"
-cp $2/i3/gruvbox/config ./.config/i3/
+echo "cp $2/gruvbox/i3/config ./.config/i3/"
+cp $2/gruvbox/i3/config ./.config/i3/
 
-echo "cp $2/kitty/gruvbox/kitty.conf ./.config/kitty/"
-cp $2/kitty/gruvbox/kitty.conf ./.config/kitty/
+echo "cp $2/gruvbox/kitty/kitty.conf ./.config/kitty/"
+cp $2/gruvbox/kitty/kitty.conf ./.config/kitty/
 
-echo "cp $2/compton/gruvbox/compton.conf ./.config/"
-cp $2/compton/gruvbox/compton.conf ./.config/
+echo "cp $2/gruvbox/compton/compton.conf ./.config/"
+cp $2/gruvbox/compton/compton.conf ./.config/
 
-echo "cp $2/vim/.vimrc ./"
-cp $2/vim/.vimrc ./
+echo "cp $2/gruvbox/vim/.vimrc ./"
+cp $2/gruvbox/vim/.vimrc ./
 
-echo "cp $2/walpaper/walpaper.jpg ./Pictures/"
-cp $2/walpaper/walpaper.jpg ./Pictures/
+echo "cp $2/gruvbox/bash/.bashrc ./"
+cp $2/gruvbox/bash/.bashrc ./
+
+echo "cp $2/gruvbox/walpaper/walpaper.jpg ./Pictures/"
+cp $2/gruvbox/walpaper/walpaper.jpg ./Pictures/
 
