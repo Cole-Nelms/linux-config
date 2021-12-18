@@ -1,6 +1,3 @@
-" debian
-runtime! debian.vim
-
 " start up checking
 if filereadable(expand('$VIMRUNTIME/defaults.vim'))
 	unlet! g:skip_defaults_vim
