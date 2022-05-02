@@ -24,7 +24,9 @@ C3="\e[0;92m"
 C4="\e[0;96m"
 END="\e[m"
 
-PS1="${C1}[${C2}$(battery) ${C4}\A${END} ${END}${C3}\w${END}${C1}]${END}\n${C1}\$${END} "
+PS1="\n${C1}[${END}${C2}$(battery)${END} ${C4}\A${END} ${C3}\w${END}${C1}]${END}\n ${C3}->${END} "
+
+trap 'echo ""' DEBUG
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
